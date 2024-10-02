@@ -1,0 +1,106 @@
+/* src/Counter.css */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Light Theme */
+.light {
+  background: linear-gradient(135deg, #f5a623, #f76b1c);
+  color: white;
+}
+
+/* Dark Theme */
+.dark {
+  background: linear-gradient(135deg, #1c1c1c, #333);
+  color: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.counter-display {
+  font-size: 4rem;
+  margin: 20px 0;
+  font-weight: bold;
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark .counter-display {
+  background-color: #444;
+  color: #fff;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.increment {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.increment:hover {
+  background-color: #218838;
+}
+
+.btn.decrement {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn.decrement:hover {
+  background-color: #c82333;
+}
+
+.btn.reset {
+  background-color: #ffc107;
+  color: white;
+}
+
+.btn.reset:hover {
+  background-color: #e0a800;
+}
+
+.btn.theme-toggle {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.theme-toggle:hover {
+  background-color: #0069d9;
+}
+
+.dark .btn.theme-toggle {
+  background-color: #5a6268;
+  color: white;
+}
+
+.dark .btn.theme-toggle:hover {
+  background-color: #444;
+}
