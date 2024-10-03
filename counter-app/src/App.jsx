@@ -3,7 +3,7 @@ import './App.css';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
-  const [isDarkMode, setIsDarkMode] = useState(false); // State for dark/light mode
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const increment = () => setCount(count + 1);
   const decrement = () => setCount(count - 1);
